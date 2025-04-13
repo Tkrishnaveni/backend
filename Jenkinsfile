@@ -20,6 +20,11 @@ pipeline{
                 sh 'npm install'
             }
         }
+        stage('Validate Docker access') {
+          steps {
+        sh 'docker ps'
+    }
+}
         stage ('Docker build'){
             steps {
                  sh """
