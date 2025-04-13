@@ -23,7 +23,7 @@ pipeline{
         stage ('Docker build'){
             steps {
                  sh """
-                  docker build -t kittukrish/backend:$appVerion .
+                  docker build -t kittukrish/backend:${appVersion} .
                   docker images
                   """
             }
