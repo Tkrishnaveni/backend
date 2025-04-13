@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment {
-        DOCKERHUB_CREDENTIALS = 'docker'
+       
         appVersion= ''
     }
     stages{
