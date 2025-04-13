@@ -20,6 +20,14 @@ pipeline{
                 sh 'npm install'
             }
         }
+        stage ('Docker build'){
+            steps {
+                 sh """
+                  docker build -t kittukrish/backend:$appVerion .
+                  docker images
+                  """
+            }
+        }
     
         }
     }
