@@ -15,10 +15,6 @@ pipeline{
              }
 
         }
-        stages('test'){
-            steps{
-
-            }
+    
         }
     }
-}
